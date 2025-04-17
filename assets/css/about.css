@@ -1,0 +1,132 @@
+/* Bagian container utama */
+.about-section {
+  min-height: 100vh;
+  padding: 50px 20px; /* Tambah padding sisi agar lebih nyaman di mobile */
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #f4d9d0, #ffda76);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  color: none;
+  align-items: center; /* Tambahkan untuk vertikal align */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Kolom foto */
+.profile-wrapper {
+  flex: 1;
+  max-width: 400px;
+
+  margin: auto;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.profile-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Kolom teks */
+.text-content {
+  flex: 2;
+  max-width: 700px;
+  margin-bottom: 5rem;
+}
+
+.intro-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #de3163;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.intro-title h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.content {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+.wave-decoration {
+  width: 60px;
+  height: 3px;
+  background-color: #ccc;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #ccc 33%, transparent 33%),
+    linear-gradient(to right, #ccc 33%, transparent 33%);
+  background-size: 6px 3px;
+  background-repeat: repeat-x;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .profile-wrapper {
+    max-width: 300px; /* Supaya nggak terlalu besar di layar kecil */
+    width: 100%;
+  }
+
+  .profile-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .text-content {
+    margin-bottom: 2rem;
+    padding: 0 10px;
+  }
+
+  .intro-title h1 {
+    font-size: 32px;
+  }
+
+  .intro-title h2 {
+    font-size: 18px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+}

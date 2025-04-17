@@ -1,0 +1,109 @@
+    /* Global Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: radial-gradient(circle at center, #de3163, #f72c5b 50%, #ff748b);
+        color: #ffffff;
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+      }
+      /* NAVBAR */
+      nav.navbar {
+        background-color: transparent;
+        padding: 1rem 2rem;
+      }
+      nav.navbar .navbar-brand {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        color: #fff;
+      }
+      nav.navbar .navbar-brand img {
+        height: 40px; /* Atur ukuran logo sesuai keinginan */
+        margin-right: 10px; /* Jarak antara logo dengan teks */
+      }
+      nav.navbar .nav-link {
+        color: #fff;
+        margin-right: 1rem;
+        transition: color 0.3s;
+      }
+      nav.navbar .nav-link:hover {
+        color: #ddd;
+      }
+      .btn-contact {
+        color: #fff;
+        transition: 0.3s;
+        padding: 0.5rem 1rem;
+      }
+      .btn-contact:hover {
+        color: #ddd;
+      }
+      /* HERO SECTION */
+      .hero-section {
+        text-align: center;
+        padding: 4rem 1rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        animation: fadeIn 1s ease-out;
+      }
+      .hero-section h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .hero-section h1 span {
+        color: #ffeb55;
+      }
+      .hero-section .sub-heading {
+        font-size: 1.2rem;
+        color: #ccc;
+        margin-bottom: 2rem;
+      }
+      .hero-section .social-icons {
+        margin-top: 2rem;
+      }
+      .hero-section .social-icons a {
+        color: #fff;
+        font-size: 2rem;
+        margin: 0 0.5rem;
+        transition: transform 0.3s, color 0.3s;
+      }
+      .hero-section .social-icons a:hover {
+        transform: scale(1.1);
+        color: #ffeb55;
+      }
+      /* KEYFRAMES ANIMASI */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* RESPONSIVE */
+      @media (min-width: 768px) {
+        .hero-section h1 {
+          font-size: 3rem;
+        }
+        .hero-section .sub-heading {
+          font-size: 1.5rem;
+        }
+      }
+      /* FOOTER */
+      footer {
+        background-color: #f2f9ff;
+        padding: 1rem;
+        text-align: center;
+        color: #f72c5b;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
